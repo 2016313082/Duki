@@ -1,0 +1,1 @@
+<p style="margin: 0; font-size: 22px; line-height: 1.2; word-break: break-word; text-align: center; mso-line-height-alt: 26px; margin-top: 0; margin-bottom: 0;"><span style="font-size: 22px;"><?= $cupon?></b></span><br/></p>

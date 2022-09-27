@@ -1,0 +1,125 @@
+[16-Nov-2021 10:39:32 America/Mexico_City] PHP Parse error:  syntax error, unexpected ')' in /home/metus973/public_html/duki_pruebas/app/View/Layouts/default.ctp on line 64
+[16-Nov-2021 10:39:32 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[18-Nov-2021 11:44:16 America/Mexico_City] PHP Parse error:  syntax error, unexpected '<' in /home/metus973/public_html/duki_pruebas/app/View/Layouts/default.ctp on line 134
+[18-Nov-2021 11:44:16 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[18-Nov-2021 11:44:16 America/Mexico_City] PHP Parse error:  syntax error, unexpected '<' in /home/metus973/public_html/duki_pruebas/app/View/Layouts/default.ctp on line 134
+[18-Nov-2021 11:44:16 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[14-Dec-2021 12:11:52 America/Mexico_City] PHP Fatal error:  Uncaught Error: Call to a member function allow() on null in /home/metus973/public_html/duki_pruebas/app/Controller/AppController.php:64
+Stack trace:
+#0 /home/metus973/public_html/duki_pruebas/lib/Cake/Event/CakeEventManager.php(244): AppController->beforefilter(Object(CakeEvent))
+#1 /home/metus973/public_html/duki_pruebas/lib/Cake/Controller/Controller.php(682): CakeEventManager->dispatch(Object(CakeEvent))
+#2 /home/metus973/public_html/duki_pruebas/lib/Cake/Error/ExceptionRenderer.php(158): Controller->startupProcess()
+#3 /home/metus973/public_html/duki_pruebas/lib/Cake/Error/ExceptionRenderer.php(95): ExceptionRenderer->_getController(Object(Error))
+#4 /home/metus973/public_html/duki_pruebas/lib/Cake/Error/ErrorHandler.php(126): ExceptionRenderer->__construct(Object(Error))
+#5 [internal function]: ErrorHandler::handleException(Object(Error))
+#6 {main}
+  thrown in /home/metus973/public_html/duki_pruebas/app/Controller/AppController.php on line 64
+[14-Dec-2021 20:54:43 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/metus973/public_html/duki_pruebas/app/View/Layouts/default.ctp on line 97
+[14-Dec-2021 20:54:43 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[14-Dec-2021 20:54:43 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/metus973/public_html/duki_pruebas/app/View/Layouts/default.ctp on line 97
+[14-Dec-2021 20:54:43 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[15-Dec-2021 10:47:15 America/Mexico_City] PHP Parse error:  syntax error, unexpected end of file, expecting ',' or ';' in /home/metus973/public_html/duki_pruebas/app/View/Layouts/default.ctp on line 228
+[15-Dec-2021 10:47:15 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[15-Dec-2021 10:47:15 America/Mexico_City] PHP Parse error:  syntax error, unexpected ''iva_sol' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/metus973/public_html/duki_pruebas/app/View/Layouts/default.ctp on line 240
+[15-Dec-2021 10:47:15 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[15-Dec-2021 21:40:57 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'carrito' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$' in /home/metus973/public_html/duki_pruebas/app/View/Layouts/default.ctp on line 98
+[15-Dec-2021 21:40:57 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[15-Dec-2021 21:40:57 America/Mexico_City] PHP Parse error:  syntax error, unexpected 'carrito' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$' in /home/metus973/public_html/duki_pruebas/app/View/Layouts/default.ctp on line 98
+[15-Dec-2021 21:40:57 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[23-Dec-2021 16:32:28 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 45575568 bytes) in /home/metus973/public_html/duki_pruebas/lib/Cake/basics.php on line 231
+[23-Dec-2021 16:52:01 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 45672336 bytes) in /home/metus973/public_html/duki_pruebas/lib/Cake/basics.php on line 231
+[23-Dec-2021 16:52:03 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 45672336 bytes) in /home/metus973/public_html/duki_pruebas/lib/Cake/basics.php on line 231
+[23-Dec-2021 16:52:06 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 45672336 bytes) in /home/metus973/public_html/duki_pruebas/lib/Cake/basics.php on line 231
+[23-Dec-2021 16:53:12 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 45676656 bytes) in /home/metus973/public_html/duki_pruebas/lib/Cake/basics.php on line 231
+[23-Dec-2021 16:53:45 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 45672336 bytes) in /home/metus973/public_html/duki_pruebas/lib/Cake/basics.php on line 231
+[23-Dec-2021 17:04:05 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 45672336 bytes) in /home/metus973/public_html/duki_pruebas/lib/Cake/basics.php on line 231
+[24-Dec-2021 04:22:34 UTC] PHP Warning:  require(/home/metus973/duki.mx/lib/Cake/Core/App.php): failed to open stream: No such file or directory in /home/metus973/duki.mx/lib/Cake/bootstrap.php on line 139
+[24-Dec-2021 04:22:34 UTC] PHP Warning:  require(/home/metus973/duki.mx/lib/Cake/Core/App.php): failed to open stream: No such file or directory in /home/metus973/duki.mx/lib/Cake/bootstrap.php on line 139
+[24-Dec-2021 04:22:34 UTC] PHP Fatal error:  require(): Failed opening required '/home/metus973/duki.mx/lib/Cake/Core/App.php' (include_path='/home/metus973/duki.mx/lib:.:/opt/alt/php72/usr/share/pear') in /home/metus973/duki.mx/lib/Cake/bootstrap.php on line 139
+[23-Dec-2021 22:46:45 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 42722968 bytes) in /home/metus973/duki.mx/lib/Cake/basics.php on line 231
+[23-Dec-2021 22:51:35 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 48333344 bytes) in /home/metus973/duki.mx/lib/Cake/Utility/Debugger.php on line 550
+[23-Dec-2021 22:51:49 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 30546178 bytes) in /home/metus973/duki.mx/lib/Cake/Utility/CakeText.php on line 196
+[23-Dec-2021 22:51:52 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 52744376 bytes) in /home/metus973/duki.mx/lib/Cake/basics.php on line 231
+[23-Dec-2021 23:27:22 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 12651752 bytes) in /home/metus973/duki.mx/lib/Cake/View/View.php on line 974
+[23-Dec-2021 23:27:28 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 3426192 bytes) in /home/metus973/duki.mx/lib/Cake/View/View.php on line 974
+[23-Dec-2021 23:27:33 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 3426192 bytes) in /home/metus973/duki.mx/lib/Cake/View/View.php on line 974
+[23-Dec-2021 23:27:52 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 3426664 bytes) in /home/metus973/duki.mx/lib/Cake/View/View.php on line 974
+[23-Dec-2021 23:30:43 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 44102424 bytes) in /home/metus973/duki.mx/lib/Cake/basics.php on line 231
+[23-Dec-2021 23:30:52 America/Mexico_City] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 44106488 bytes) in /home/metus973/duki.mx/lib/Cake/basics.php on line 231
+[10-Jan-2022 12:30:28 America/Mexico_City] PHP Warning:  rename(/home/metus973/duki.mx/app/tmp/logs/debug.log,/home/metus973/duki.mx/app/tmp/logs/debug.log.1641839428) [<a href='http://php.net/function.rename'>function.rename</a>]: No such file or directory in /home/metus973/duki.mx/lib/Cake/Log/Engine/FileLog.php on line 205
+[13-Jan-2022 18:08:46 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 41
+[13-Jan-2022 18:08:47 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 41
+[13-Jan-2022 18:08:47 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 41
+[13-Jan-2022 18:11:26 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 41
+[09-Feb-2022 10:38:54 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 40
+[09-Feb-2022 10:38:54 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 40
+[09-Feb-2022 10:38:55 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 40
+[09-Feb-2022 10:38:59 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 40
+[09-Feb-2022 10:38:59 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 40
+[09-Feb-2022 10:38:59 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 40
+[09-Feb-2022 10:39:09 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 37
+[09-Feb-2022 10:39:09 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 37
+[09-Feb-2022 10:39:09 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 37
+[09-Feb-2022 10:39:11 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 37
+[09-Feb-2022 10:39:12 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 37
+[09-Feb-2022 10:39:12 America/Mexico_City] PHP Fatal error:  Cannot redeclare PedidosController::prueba() in /home/metus973/duki.mx/app/Controller/PedidosController.php on line 37
+[09-Jun-2022 16:56:09 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 16:56:09 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 16:56:09 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 16:56:09 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 16:56:35 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 16:56:35 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 16:56:35 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 16:56:35 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 16:57:14 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 16:57:21 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 16:58:02 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 16:58:02 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 16:58:02 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 16:58:02 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 17:01:09 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 17:01:09 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 17:01:09 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[09-Jun-2022 17:01:09 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::agregar_producto_sub() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 510
+[10-Jun-2022 11:21:16 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:21:16 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:21:16 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:21:16 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:21:23 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:21:23 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:21:23 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:21:23 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:21:52 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:21:52 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:21:52 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:21:52 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:22:13 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:22:40 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:22:40 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:22:40 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[10-Jun-2022 11:22:40 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::eliminar_subcategoria_producto() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 575
+[05-Jul-2022 16:24:45 America/Mexico_City] PHP Parse error:  syntax error, unexpected '94' (T_LNUMBER), expecting ')' in /home/metus973/duki.mx/app/View/Layouts/default.ctp on line 132
+[05-Jul-2022 16:24:45 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[05-Jul-2022 16:24:48 America/Mexico_City] PHP Parse error:  syntax error, unexpected '94' (T_LNUMBER), expecting ')' in /home/metus973/duki.mx/app/View/Layouts/default.ctp on line 132
+[05-Jul-2022 16:24:48 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[05-Jul-2022 16:24:50 America/Mexico_City] PHP Parse error:  syntax error, unexpected '94' (T_LNUMBER), expecting ')' in /home/metus973/duki.mx/app/View/Layouts/default.ctp on line 132
+[05-Jul-2022 16:24:50 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[05-Jul-2022 16:25:02 America/Mexico_City] PHP Parse error:  syntax error, unexpected '94' (T_LNUMBER), expecting ')' in /home/metus973/duki.mx/app/View/Layouts/default.ctp on line 132
+[05-Jul-2022 16:25:02 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[05-Jul-2022 16:28:23 America/Mexico_City] PHP Parse error:  syntax error, unexpected '94' (T_LNUMBER), expecting ')' in /home/metus973/duki.mx/app/View/Layouts/default.ctp on line 132
+[05-Jul-2022 16:28:23 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[05-Jul-2022 16:28:26 America/Mexico_City] PHP Parse error:  syntax error, unexpected '94' (T_LNUMBER), expecting ')' in /home/metus973/duki.mx/app/View/Layouts/default.ctp on line 132
+[05-Jul-2022 16:28:26 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[05-Jul-2022 16:28:28 America/Mexico_City] PHP Parse error:  syntax error, unexpected '94' (T_LNUMBER), expecting ')' in /home/metus973/duki.mx/app/View/Layouts/default.ctp on line 132
+[05-Jul-2022 16:28:28 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[05-Jul-2022 16:28:45 America/Mexico_City] PHP Parse error:  syntax error, unexpected '94' (T_LNUMBER), expecting ')' in /home/metus973/duki.mx/app/View/Layouts/default.ctp on line 131
+[05-Jul-2022 16:28:45 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[05-Jul-2022 16:28:47 America/Mexico_City] PHP Parse error:  syntax error, unexpected '94' (T_LNUMBER), expecting ')' in /home/metus973/duki.mx/app/View/Layouts/default.ctp on line 131
+[05-Jul-2022 16:28:47 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[05-Jul-2022 16:28:47 America/Mexico_City] PHP Parse error:  syntax error, unexpected '94' (T_LNUMBER), expecting ')' in /home/metus973/duki.mx/app/View/Layouts/default.ctp on line 131
+[05-Jul-2022 16:28:47 America/Mexico_City] PHP Fatal error:  Exception thrown without a stack frame in Unknown on line 0
+[11-Jul-2022 13:13:15 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::editar_subcategoria() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 400
+[11-Jul-2022 13:16:06 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::editar_subcategoria() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 400
+[11-Jul-2022 13:16:14 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::editar_subcategoria() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 400
+[11-Jul-2022 13:16:25 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::editar_subcategoria() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 400
+[11-Jul-2022 13:16:36 America/Mexico_City] PHP Fatal error:  Cannot redeclare CategoriasController::editar_subcategoria() in /home/metus973/duki.mx/app/Controller/CategoriasController.php on line 400
