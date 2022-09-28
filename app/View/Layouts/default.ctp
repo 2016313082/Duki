@@ -639,130 +639,115 @@
     </div>
   </div>
 </div>
-<!-- Modal direccion -->
+<!-- Inicia modal de fraccionamiento para boostrap -->
 		<div class="modal fade" id="modal_fraccionamiento" tabindex="-1" role="dialog" aria-labelledby="modal_fraccionamiento" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-			<div class="modal-content">
-				<div class="modal-body">
-					<div class="form-row">
-						<div class="col-sm-12 col-12">
-							<center><img id="img_cp" style="height:60px;"></center>
-						</div>
-						<div class="col-sm-12 col-12" style="margin-top: 2%;">
-							<div class="card">
-								<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-									<li class="nav-item">
-										<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Inicio de sesión</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Crear cuenta</a>
-									</li>
-								</ul>
-								<div class="tab-content" id="myTabContent">
-									<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-										<form id="form-login">
-											<div class="col-sm-12 col-12">
-												<span>Correo</span>
-											</div>
-											<div class="col-sm-12 col-12" >
-												<input class="form-control" placeholder="Correo" type="mail" name="data[User][email]">
-											</div>
-											<div class="col-sm-12 col-12">
-												<span>Contraseña</span>
-											</div>
-											<div class="col-sm-12 col-12" >
-												<input class="form-control" placeholder="Contraseña" type="password" name="data[User][password]" id="pLog">
-											</div><br>
-											<div class="col-sm-12 col-12" >
-												<div class="custom-control custom-switch">
-													<input type="checkbox" class="custom-control-input" id="verPassLog">
-													<label class="custom-control-label" for="verPassLog"><h5 id="eyeLog"></h5></label> 
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="form-row">
+							<div class="col-sm-12 col-12">
+								<center><img id="img_cp" style="height:60px;"></center>
+							</div>
+							<div class="col-sm-12 col-12" style="margin-top: 2%;">
+								<div class="card">
+									<ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+											<li class="nav-item">
+												<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Inicio de sesión</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Crear cuenta</a>
+											</li>
+										</ul>
+									<div class="tab-content" id="myTabContent">
+										<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+											<form id="form-login">
+												<div class="col-sm-12 col-12">
+													<span>Correo</span>
 												</div>
-											</div>
-											<div class="col-sm-12 col-12" style="margin-top: 2%;">
-												<center><button class="btn btn-duki btn-block">Enviar</button></center>
-											</div><br>
-										</form>
-									</div>
-									<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-										<form id="form-registro">
-											<div class="col-sm-12 col-12">
-												<span>Correo</span>
-											</div>
-											<div class="col-sm-12 col-12" >
-												<input class="form-control" placeholder="Correo" type="mail" name="email" id="email">
-											</div>
-											<div class="col-sm-12 col-12">
-												<span>Nombres</span>
-											</div>
-											<div class="col-sm-12 col-12" >
-												<input class="form-control" placeholder="Nombres" type="text" id="nombres" name="nombres">
-											</div>
-											<div class="col-sm-12 col-12">
-												<span>Apellido paterno</span>
-											</div>
-											<div class="col-sm-12 col-12" >
-												<input class="form-control" placeholder="Apellido paterno" type="text" id="apPaterno" name="apellido_paterno">
-											</div>
-											<div class="col-sm-12 col-12">
-												<span>Celular</span>
-											</div>
-											<div class="col-sm-12 col-12" >
-												<input class="form-control" placeholder="Celular" type="number" id="celular" name="celular">
-											</div>
-											<div class="col-sm-12 col-12">
-												<span>Contraseña</span>
-											</div>
-											<div class="col-sm-12 col-12" >
-												<input class="form-control" placeholder="Contraseña" type="password" id="p1" name="password">
-											</div>
-											<div class="col-sm-12 col-12">
-												<span>Confirmar contraseña</span>
-											</div>
-											<div class="col-sm-12 col-12" >
-												<input class="form-control" placeholder="Confirmar contraseña" type="password" id="p2">
-											</div><br>
-											<div class="col-sm-12 col-12">
-												<?= $this->Form->input("tyc",array('required'=>true,'style'=>'height: 15px;width: 15px;','label'=>array('text'=>'Acepto los '.$this->Html->link('términos y condiciones',array('controller'=>'pages','action'=>'terminos'),array('target'=>'_blank')),'style'=>"margin-left:5px"),'type'=>"checkbox",'id'=>'tyc'))?>
-											</div>
-											<div class="col-sm-12 col-12">
-												<div id="validador"></div>
-											</div>
-											<div class="col-sm-12 col-12">
-												<div class="custom-control custom-switch">
-													<input type="checkbox" class="custom-control-input" id="verPass">
-													<label class="custom-control-label" for="verPass"><h5 id="eye"></h5></label> 
+												<div class="col-sm-12 col-12" >
+													<input class="form-control" placeholder="Correo" type="mail" name="data[User][email]">
 												</div>
-											</div>
-											<div class="col-sm-12 col-12" >
-												<center><button class="btn btn-duki btn-block">Enviar</button></center>
-											</div><br>
-										</form>
+												<div class="col-sm-12 col-12">
+													<span>Contraseña</span>
+												</div>
+												<div class="col-sm-12 col-12" >
+													<input class="form-control" placeholder="Contraseña" type="password" name="data[User][password]" id="pLog">
+												</div><br>
+												<div class="col-sm-12 col-12" >
+													<div class="custom-control custom-switch">
+														<input type="checkbox" class="custom-control-input" id="verPassLog">
+														<label class="custom-control-label" for="verPassLog"><h5 id="eyeLog"></h5></label> 
+													</div>
+												</div>
+												<div class="col-sm-12 col-12" style="margin-top: 2%;">
+													<center><button class="btn btn-duki btn-block">Enviar</button></center>
+												</div><br>
+											</form>
+										</div>
+								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+								<form id="form-registro">
+									<div class="col-sm-12 col-12">
+										<span>Correo</span>
 									</div>
+									<div class="col-sm-12 col-12" >
+										<input class="form-control" placeholder="Correo" type="mail" name="email" id="email">
+									</div>
+									<div class="col-sm-12 col-12">
+										<span>Nombres</span>
+									</div>
+									<div class="col-sm-12 col-12" >
+										<input class="form-control" placeholder="Nombres" type="text" id="nombres" name="nombres">
+									</div>
+									<div class="col-sm-12 col-12">
+										<span>Apellido paterno</span>
+									</div>
+									<div class="col-sm-12 col-12" >
+										<input class="form-control" placeholder="Apellido paterno" type="text" id="apPaterno" name="apellido_paterno">
+									</div>
+									<div class="col-sm-12 col-12">
+										<span>Celular</span>
+									</div>
+									<div class="col-sm-12 col-12" >
+										<input class="form-control" placeholder="Celular" type="number" id="celular" name="celular">
+									</div>
+									<div class="col-sm-12 col-12">
+										<span>Contraseña</span>
+									</div>
+									<div class="col-sm-12 col-12" >
+										<input class="form-control" placeholder="Contraseña" type="password" id="p1" name="password">
+									</div>
+									<div class="col-sm-12 col-12">
+										<span>Confirmar contraseña</span>
+									</div>
+									<div class="col-sm-12 col-12" >
+										<input class="form-control" placeholder="Confirmar contraseña" type="password" id="p2">
+									</div><br>
+									<div class="col-sm-12 col-12">
+										<?= $this->Form->input("tyc",array('required'=>true,'style'=>'height: 15px;width: 15px;','label'=>array('text'=>'Acepto los '.$this->Html->link('términos y condiciones',array('controller'=>'pages','action'=>'terminos'),array('target'=>'_blank')),'style'=>"margin-left:5px"),'type'=>"checkbox",'id'=>'tyc'))?>
+									</div>
+									<div class="col-sm-12 col-12">
+										<div id="validador"></div>
+									</div>
+									<div class="col-sm-12 col-12">
+										<div class="custom-control custom-switch">
+											<input type="checkbox" class="custom-control-input" id="verPass">
+											<label class="custom-control-label" for="verPass"><h5 id="eye"></h5></label> 
+										</div>
+									</div>
+									<div class="col-sm-12 col-12" >
+										<center><button class="btn btn-duki btn-block">Enviar</button></center>
+									</div><br>
+								</form>
 								</div>
-							</div>	
+								</div>
+								</div>	
+							</div>
 						</div>
-						<!--<div class="col-sm-6 col-12" style="margin-top: 2%;">
-							<div class="col-sm-12 col-12">
-								<h5>Verifica si tu zona cuenta con disponibilidad</h5><br>
-							</div>
-							<div class="col-sm-12 col-12">
-								<div class="input-group mb-3">
-									<input type="text" class="form-control" placeholder="Código postal, colonia o fraccionamiento" aria-label="Código postal" aria-describedby="basic-addon2" id="buscador_cp">
-									<div class="input-group-append">
-										<button class="btn btn-outline-secondary" type="button"><span><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span></button>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm-12 col-12">
-								<select class="form-control" id="resultado_cp" size="3"></select>
-							</div>
-						</div> -->
 					</div>
 				</div>
 			</div>
-			</div>
 		</div>
+<!--Termina modal de fraccionamiento para boostrap-->
 		
 		<div class="modal fade" id="verifica_CP" tabindex="-1" role="dialog"  >
 			<div class="modal-dialog modal-dialog-centered" role="document">
