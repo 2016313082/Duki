@@ -64,8 +64,8 @@
             decrementButton: "<strong>&minus;</strong>", // button text
             incrementButton: "<strong>&plus;</strong>", // ..
             groupClass: "", // css class of the resulting input-group
-            buttonsClass: "btn-outline-secondary",
-            buttonsWidth: "2.5rem",
+            buttonsClass: "",
+            buttonsWidth: "1.5rem",
             textAlign: "center", // alignment of the entered number
             autoDelay: 500, // ms threshold before auto value change
             autoInterval: 50, // speed of auto value change
@@ -74,10 +74,10 @@
             locale: navigator.language, // the locale, per default detected automatically from the browser
             editor: I18nEditor, // the editor (parsing and rendering of the input)
             template: // the template of the input
-                '<div class="input-group ${groupClass}">' +
-                '<div class="input-group-prepend"><button style="min-width: ${buttonsWidth}" class="btn btn-decrement ${buttonsClass} btn-minus" type="button">${decrementButton}</button></div>' +
-                '<input type="text" inputmode="decimal" style="text-align: ${textAlign}" class="form-control form-control-text-input"/>' +
-                '<div class="input-group-append"><button style="min-width: ${buttonsWidth}" class="btn btn-increment ${buttonsClass} btn-plus" type="button">${incrementButton}</button></div>' +
+                '<div class="input-group ${groupClass}" style=" box-shadow: 0 10px 65px -10px rgba(0, 0, 0, 0.25); border-radius: 2rem;">' +
+                '<div class="input-group-prepend"><button style="min-width: ${buttonsWidth}; color: #4fb68d; border:none;" class="rounded-circle btn btn-decrement ${buttonsClass} btn-minus" type="button">${decrementButton}</button></div>' +
+                '<input type="text" inputmode="decimal" style="text-align: ${textAlign}; border:none; background:none;" class="rounded-pill form-control form-control-text-input"/>' +
+                '<div class="input-group-append"><button style="min-width: ${buttonsWidth}; color: #4fb68d; border:none;" class="rounded-circle btn btn-increment ${buttonsClass} btn-plus" type="button">${incrementButton}</button></div>' +
                 '</div>'
         }
 
@@ -133,7 +133,7 @@
                     $inputGroup.find(".input-group-prepend").append(prefixElement)
                 }
                 if (suffix) {
-                    var suffixElement = $('<span class="input-group-text">' + suffix + '</span>')
+                    var suffixElement = $('<span class="input-group-text" style="border: none; background: none;">' + suffix + '</span>')
                     $inputGroup.find(".input-group-append").prepend(suffixElement)
                 }
 
@@ -284,8 +284,8 @@
                 var readonly = $original.prop("readonly")
                 $input.prop("disabled", disabled)
                 $input.prop("readonly", readonly || props.buttonsOnly)
-                $buttonIncrement.prop("disabled", disabled || readonly)
-                $buttonDecrement.prop("disabled", disabled || readonly)
+                //$buttonIncrement.prop("disabled", disabled || readonly)
+                //$buttonDecrement.prop("disabled", disabled || readonly)
                 if (disabled || readonly) {
                     resetTimer()
                 }

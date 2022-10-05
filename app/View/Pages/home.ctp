@@ -36,12 +36,12 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 </div>
 <!-- Slider Arae End -->
 <!-- Static Area Start -->
-<section class="static-area mtb-60px">
+<section class="static-area mtb-40px mt-res-md-60px mt-res-lg-30px">
     <div class="container">
-        <div class="static-area-wrap">
+        <div class="static-area-wrap" style="padding: 0px 30px">
             <div class="row">
                 <!-- Static Single Item Start -->
-                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-xs-4 col-md-4 col-sm-12">
                     <div class="single-static pb-res-md-0 pb-res-sm-0 pb-res-xs-0">
                         <?= $this->Html->image('icons/icono-envio.png',array('class'=>'img-responsive'))?>
                         <div class="single-static-meta">
@@ -51,9 +51,12 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
                     </div>
                 </div>
                 <!-- Static Single Item End -->
+                <div class="col-lg-1 col-sx-1 col-md-1">
+                    <hr align="left" class="lineaVertical" width="2px" noshade="noshade">
+                </div>
                 <!-- Static Single Item Start -->
-                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6">
-                    <div class="single-static pb-res-md-0 pb-res-sm-0 pb-res-xs-0 pt-res-xs-20">
+                <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12">
+                    <div class="single-static pb-res-md-0 pb-res-sm-0">
                         <?= $this->Html->image('icons/icono-cobertura.png',array('class'=>'img-responsive'))?>
                         <div class="single-static-meta">
                             <h4>Entregas express</h4>
@@ -62,9 +65,12 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
                     </div>
                 </div>
                 <!-- Static Single Item End -->
+                <div class="col-lg-1 col-sx-1 col-md-1">
+                    <hr align="left" class="lineaVertical" width="2px" noshade="noshade">
+                </div>
                 <!-- Static Single Item Start -->
-                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6">
-                    <div class="single-static pt-res-md-30 pb-res-sm-30 pb-res-xs-0 pt-res-xs-20">
+                <div class="col-lg-3 col-xs-4 col-md-4 col-sm-12">
+                    <div class="single-static pb-res-md-0 pb-res-sm-0 pb-res-xs-0">
                         <?= $this->Html->image('icons/icono-pago.png',array('class'=>'img-responsive'))?>
                         <div class="single-static-meta">
                             <h4>Pagos 100% Seguros</h4>
@@ -72,19 +78,6 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
                         </div>
                     </div>
                 </div>
-                <!-- Static Single Item End -->
-                <!-- Static Single Item Start -->
-                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6">
-                    <div class="single-static pt-res-md-30 pb-res-sm-30 pt-res-xs-20">
-                        <?= $this->Html->image('icons/icono-atencion.png',array('class'=>'img-responsive'))?>
-                        <div class="single-static-meta">
-                            <h4>Atención Personalizada</h4>
-                            <p>Lunes a viernes de 8:00am a 8:00pm</p>
-                            <p>Sábados y domingos de 9:00am a 2:00pm</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Static Single Item End -->
             </div>
         </div>
     </div>
@@ -131,78 +124,59 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
         </div>
         <!-- Category Slider Start -->
         <div class="category-slider owl-carousel owl-nav-style">
-            <!-- Single item -->
             <div class="category-item">
                 <div class="category-list mb-30px">
                     <div class="category-thumb">
-                        <?= $this->Html->image('duki/frutas.png',array('controller'=>'categorias','action'=>'view',88),array('escape'=>false))?>
-                    </div>
-                    <div class="desc-listcategoreis">
-                        <div class="name_categories">
-                            <h4>Frutas</h4>
-                        </div>
-                        <?= $this->Html->link('Ver <i class="ion-android-arrow-dropright-circle"></i>',array('controller'=>'categorias','action'=>'view',88),array('escape'=>false))?>
+                        <?= $this->Html->link($this->Html->image('duki/categorias/Frutas_Verduras.png'),array('controller'=>'categorias','action'=>'view',88),array('escape'=>false))?>
                     </div>
                 </div>
+            </div>
+            <div class="category-item">
                 <div class="category-list mb-30px"> 
                     <div class="category-thumb">
-                        <?= $this->Html->image('duki/Marcas_Mexicanas.png',array('controller'=>'categorias','action'=>'view',91),array('escape'=>false))?>
-                    </div>
-                    <div class="desc-listcategoreis">
-                        <div class="name_categories">
-                            <h4>Marcas Mexicanas</h4>
-                        </div>
-                        <?= $this->Html->link('Ver <i class="ion-android-arrow-dropright-circle"></i>',array('controller'=>'categorias','action'=>'view',91),array('escape'=>false))?>
+                         <?= $this->Html->link($this->Html->image('duki/categorias/Carnes_Pescados.png'),array('controller'=>'categorias','action'=>'view',96),array('escape'=>false))?>
                     </div>
                 </div>
             </div>
-            <!-- Single item -->
             <div class="category-item">
                 <div class="category-list mb-30px">
                     <div class="category-thumb">
-                        <?= $this->Html->image('duki/granel.png',array('controller'=>'categorias','action'=>'view',93),array('escape'=>false))?>
-                    </div>
-                    <div class="desc-listcategoreis">
-                        <div class="name_categories">
-                            <h4>Granel</h4>
-                        </div>
-                        <?= $this->Html->link('Ver <i class="ion-android-arrow-dropright-circle"></i>',array('controller'=>'categorias','action'=>'view',93),array('escape'=>false))?>
-                    </div>
+                    <?= $this->Html->link($this->Html->image('duki/categorias/Lacteos_Huevo.png'),array('controller'=>'categorias','action'=>'view',95),array('escape'=>false))?>                        
+                    </div>                    
                 </div>
+            </div>
+            <div class="category-item">
                 <div class="category-list mb-30px">
                     <div class="category-thumb">
-                        <?= $this->Html->image('duki/carnes.png',array('controller'=>'categorias','action'=>'view',99),array('escape'=>false))?>
-                    </div>
-                    <div class="desc-listcategoreis">
-                        <div class="name_categories">
-                            <h4>Carnes</h4>
-                        </div>
-                        <?= $this->Html->link('Ver <i class="ion-android-arrow-dropright-circle"></i>',array('controller'=>'categorias','action'=>'view',96),array('escape'=>false))?>
+                        <?= $this->Html->link($this->Html->image('duki/categorias/Vinos_Licores.png'),array('controller'=>'categorias','action'=>'view',90),array('escape'=>false))?>
                     </div>
                 </div>
             </div>
-            <!-- Single item -->
             <div class="category-item">
                 <div class="category-list mb-30px">
                     <div class="category-thumb">
-                        <?= $this->Html->image('duki/despensa.png',array('controller'=>'categorias','action'=>'view',94),array('escape'=>false))?>
-                    </div>
-                    <div class="desc-listcategoreis">
-                        <div class="name_categories">
-                            <h4>Despensa</h4>
-                        </div>
-                        <?= $this->Html->link('Ver <i class="ion-android-arrow-dropright-circle"></i>',array('controller'=>'categorias','action'=>'view',94),array('escape'=>false))?>
+                    <?= $this->Html->link($this->Html->image('duki/categorias/Limpieza_Hogar.png'),array('controller'=>'categorias','action'=>'view',101),array('escape'=>false))?>
                     </div>
                 </div>
+            </div>
+            <div class="category-item">
                 <div class="category-list mb-30px">
                     <div class="category-thumb">
-                        <?= $this->Html->image('duki/verduras.png',array('controller'=>'categorias','action'=>'view',101),array('escape'=>false))?>
+                    <?= $this->Html->link($this->Html->image('duki/categorias/Higiene_Personal.png'),array('controller'=>'categorias','action'=>'view',99),array('escape'=>false))?>
                     </div>
-                    <div class="desc-listcategoreis">
-                        <div class="name_categories">
-                            <h4>Verduras</h4>
-                        </div>
-                        <?= $this->Html->link('Ver <i class="ion-android-arrow-dropright-circle"></i>',array('controller'=>'categorias','action'=>'view',89),array('escape'=>false))?>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="category-list mb-30px">
+                    <div class="category-thumb">
+                    <?= $this->Html->link($this->Html->image('duki/categorias/Promociones.png'),array('controller'=>'categorias','action'=>'view',103),array('escape'=>false))?>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="category-list mb-30px">
+                    <div class="category-thumb">
+                    <?= $this->Html->link($this->Html->image('duki/categorias/Consume_Local.png'),array('controller'=>'categorias','action'=>'view',91),array('escape'=>false))?>
                     </div>
                 </div>
             </div>
@@ -214,20 +188,18 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 <section class="hot-deal-area">
     <div class="container">
         <div class="row">
-            
             <!-- New Arrivals Area Start -->
-            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-12">
+            <div class="col-xs-9 col-sm-12 col-md-12 col-lg-8 col-xl-9">
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- Section Title -->
+                        <!-- start Section Title -->
                         <div class="section-title ml-0px mt-res-sx-30px">
-                            <h2>Promociones</h2>
-                            <p>Promociones frescas de hoy</p>
+                            <h2>Promos favoritas de DUKI</h2>
+                            <p>Todas las ofertas</p>
                         </div>
-                        <!-- Section Title -->
+                        <!-- end Section Title -->
                     </div>
-                </div>
-                
+                </div>   
                 <!-- New Product Slider Start -->
                 <div class="new-product-slider owl-carousel owl-nav-style">
                     <?php $i=2?>
@@ -245,6 +217,23 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
                     <?php endforeach?>
                     <!-- Product Single Item -->
                 </div>
+            </div> <!--end row-->  
+    </div> <!--end container-->
+    <div class="col-xs-3 col-sm-8 col-md-6 col-lg-4 col-xl-3 card" style="margin-top:80px; align-items:center; background-color:#FDF5EA">
+        <form class="form-group center">
+            <div style="text-align:center; margin-top:50px; color: #3FBF90; ">
+            <h1><b> Te regalamos </b></h1><br>
+            <h1><b> $200 </b></h1><br>
+            </div>
+            <div style="text-align:center" class="form-group">
+            <h5>En tu primer pedido</h5><br>
+            <input class="form-control" type="text" name="" id="" placeholder="Usuario"><br>
+            <input class="form-control" type="text" name="" id="" placeholder="Correo"><br>
+            <input class="form-control" type="text" name="" id="" placeholder="Contraseña">
+            </div>
+        </form>
+        <div class="form-group center">
+            <button class="btn-warning" type="submit">Registrate</button>
         </div>
     </div>
 </section>
@@ -253,19 +242,14 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 <div class="banner-area">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-xs-12">
-                <div class="banner-wrapper">
-                    <?= $this->Html->link($this->Html->image('banners/Emprendedores01.png'),array('controller'=>'categorias','action'=>'view',121),array('escape'=>false))?>
-                </div>
-            </div>
             <div class="col-md-6 col-xs-12 mt-res-sx-30px">
                 <div class="banner-wrapper">
                     <?= $this->Html->link($this->Html->image('banners/A2_Central.png'),array('controller'=>'categorias','action'=>'view',88),array('escape'=>false))?>
                 </div>
             </div>
-            <div class="col-md-3 col-xs-12 mt-res-sx-30px">
+            <div class="col-md-6 col-xs-12 mt-res-sx-30px">
                 <div class="banner-wrapper">
-                    <?= $this->Html->link($this->Html->image('banners/A3_Granel.png'),array('controller'=>'categorias','action'=>'view',93),array('escape'=>false))?>
+                    <?= $this->Html->link($this->Html->image('banners/A2_Central.png'),array('controller'=>'categorias','action'=>'view',88),array('escape'=>false))?>
                 </div>
             </div>
         </div>
@@ -274,27 +258,6 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 <!-- Banner Area End -->
 <!-- Best Sells Area Start -->
 <section class="best-sells-area mb-30px">
-    <div class="container">
-        <!-- Section Title Start -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h2>Productos Destacados</h2>
-                    <p>Lo que nuestros clientes prefieren.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Section Title End -->
-        <!-- Best Sell Slider Carousel Start -->
-        <div class="best-sell-slider owl-carousel owl-nav-style">
-            <!-- Single Item -->
-            <?php foreach($destacados as $producto):?> 
-                <?= $this->Element('Productos/grid_view',array('producto'=>$producto['productos'],'tipo'=>'destacados','categoria_id'=>$destacados[0]['productos_categorias']['categoria_id']))?>
-            <?php endforeach?>
-            <!-- Single Item -->
-        </div>
-        <!-- Best Sells Carousel End -->
-    </div>
 </section>
 <!-- Best Sells Slider End -->
 <!-- Banner Area 2 Start -->

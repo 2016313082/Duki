@@ -475,7 +475,7 @@
                                 </div>
                                 <!-- footer logo -->
                                 <div class="about-footer">
-                                    <p class="text-info">Haz tu súper con nosotros, descurbre deliciosos productos locales y vive la experiencia DUKI</p>
+                                    <p class="text-info">Haz tu súper con nosotros, descubre deliciosos productos locales y vive la experiencia DUKI</p>
                                     <div class="need-help">
                                         <p class="phone-info">
                                             ¿Necesitas ayuda? Contáctanos por WhatsApp
@@ -1899,13 +1899,19 @@ function unidad1(unidad_principal,id,inventario,categoria){
 	}
 	$('#cantidad'+id).attr('min',1);
 	$('#cantidad'+id).attr('max',inventario);
-	$('#cantidad'+id).attr('data-prefix',unidad_principal);
+	$('#cantidad'+id).attr('data-suffix',unidad_principal);
 	$('#cantidad'+id).val(1);
 	$('#cantidad'+id).inputSpinner({buttonsOnly: true, autoInterval: undefined});
 	$('#unidad'+id).val(unidad_principal);
 }
 
     function unidad2(categoria,unidad_secundaria,id,inventario,conversion,categoria_2){
+	var unidad_defecto = "defecto";
+	if(unidad_secundaria == "Pieza"){
+		unidad_defecto = "Pz";
+	} else{
+		unidad_defecto = unidad_secundaria;
+	}
 	console.log(categoria_2);
         var inventario_gramos = inventario*1000;
         if(unidad_secundaria == 'Gr'){
@@ -1915,7 +1921,7 @@ function unidad1(unidad_principal,id,inventario,categoria){
                 $('#cantidad'+id).attr('max',inventario_gramos);
                 $('#cantidad'+id).attr('step',500);
                 $('#cantidad'+id).removeAttr('data-decimals');
-                $('#cantidad'+id).attr('data-prefix',unidad_secundaria);
+                $('#cantidad'+id).attr('data-suffix',unidad_defecto);
                 $('#cantidad'+id).val(500);
                 $('#cantidad'+id).inputSpinner({buttonsOnly: true, autoInterval: undefined});
                 $('#unidad'+id).val(unidad_secundaria);
@@ -1926,7 +1932,7 @@ function unidad1(unidad_principal,id,inventario,categoria){
                 $('#cantidad'+id).attr('step',50);
                 $('#cantidad'+id).removeAttr('data-decimals');
                 $('#cantidad'+id).attr('max',inventario_gramos);
-                $('#cantidad'+id).attr('data-prefix',unidad_secundaria);
+                $('#cantidad'+id).attr('data-suffix',unidad_defecto);
                 $('#cantidad'+id).val(100);
                 $('#cantidad'+id).inputSpinner({buttonsOnly: true, autoInterval: undefined});
                 $('#unidad'+id).val(unidad_secundaria);
@@ -1938,7 +1944,7 @@ function unidad1(unidad_principal,id,inventario,categoria){
             $('#cantidad'+id).removeAttr('min');
             $('#cantidad'+id).removeAttr('step');
             $('#cantidad'+id).attr('min',1);
-            $('#cantidad'+id).attr('data-prefix',unidad_secundaria); 
+            $('#cantidad'+id).attr('data-suffix',unidad_defecto); 
 			$('#cantidad'+id).attr('max',limite_pieza);
             $('#cantidad'+id).val(1);
             $('#cantidad'+id).inputSpinner({buttonsOnly: true, autoInterval: undefined});

@@ -94,7 +94,7 @@
     /*---------------------------
        Best Sell Slider Active
     ------------------------------ */
-    $('.best-sell-slider').owlCarousel({
+   $('.best-sell-slider').owlCarousel({
             autoplay :   false,
             loop: false,
             smartSpeed : 1000,
@@ -108,24 +108,24 @@
                     loop: true,
                 },
                 360:{
-                    items:1,
-                    autoplay: true,
+                    items:2,
+                    autoplay: false,
                     loop: true,
                 },
                 500:{
-                    items:2,
-                    autoplay: true,
+                    items:3,
+                    autoplay: false,
                     loop: true,
     
                 },
                 768:{
-                    items:3,
-                },
-                992:{
                     items:4,
                 },
-                1200:{
+                992:{
                     items:5,
+                },
+                1200:{
+                    items:7,
                 }
             }
     })
@@ -179,7 +179,7 @@
             loop: false,
             nav :  true ,
             dots :  false ,
-            margin:30,
+            margin: 20,
             responsive:{
                 0:{
                     items:1,
@@ -187,24 +187,24 @@
                     loop: true,
                 },
                 360:{
-                    items:1,
+                    items:3,
                     autoplay: true,
                     loop: true,
                 },
                 576:{
-                    items:1,
+                    items:4,
                     autoplay: true,
                     loop: true,
     
                 },
                 767:{
-                    items:2,
+                    items:4,
                 },
                 992:{
-                    items:3,
+                    items:5,
                 },
                 1200:{
-                    items:3,
+                    items:7,
                 }
             }
     })
@@ -282,7 +282,7 @@
             nav :  true ,
             loop: false,
             dots :  false ,
-            items:4,
+            items:5,
             margin:30,
             responsive:{
                 0:{
@@ -315,7 +315,7 @@
                     items:3,
                 },
                 1300:{
-                    items:4,
+                    items:5,
                 }
             }
     })
