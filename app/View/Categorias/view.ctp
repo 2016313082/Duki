@@ -301,6 +301,13 @@ main::-webkit-scrollbar {
     }
 
     function unidad2(categoria,unidad_secundaria,id,inventario,conversion){
+         var unidad_defecto = "defecto";
+
+        if (unidad_secundaria == "Pieza"){
+            unidad_defecto = "Pz";
+        }else{
+            unidad_defecto = "No pieza";
+        }
         var inventario_gramos = inventario*1000;
         if(unidad_secundaria == 'Gr'){
             if(categoria == 96 || categoria == 104){
@@ -309,10 +316,10 @@ main::-webkit-scrollbar {
                 $('#cantidad'+id).attr('max',inventario_gramos);
                 $('#cantidad'+id).attr('step',500);
                 $('#cantidad'+id).removeAttr('data-decimals');
-                $('#cantidad'+id).attr('data-prefix',unidad_secundaria);
+                $('#cantidad'+id).attr('data-prefix',unidad_defecto);
                 $('#cantidad'+id).val(500);
                 $('#cantidad'+id).inputSpinner({buttonsOnly: true, autoInterval: undefined});
-                $('#unidad'+id).val(unidad_secundaria);
+                $('#unidad'+id).val(unidad_defecto);
                 //conversion = 0.180;
             }else{
                 $('#cantidad'+id).inputSpinner('destroy');
@@ -320,10 +327,10 @@ main::-webkit-scrollbar {
                 $('#cantidad'+id).attr('step',50);
                 $('#cantidad'+id).removeAttr('data-decimals');
                 $('#cantidad'+id).attr('max',inventario_gramos);
-                $('#cantidad'+id).attr('data-prefix',unidad_secundaria);
+                $('#cantidad'+id).attr('data-prefix',unidad_defecto);
                 $('#cantidad'+id).val(100);
                 $('#cantidad'+id).inputSpinner({buttonsOnly: true, autoInterval: undefined});
-                $('#unidad'+id).val(unidad_secundaria);
+                $('#unidad'+id).val(unidad_defecto);
                 //conversion = 0.180;
             }	
         }else{
@@ -332,11 +339,11 @@ main::-webkit-scrollbar {
             $('#cantidad'+id).removeAttr('min');
             $('#cantidad'+id).removeAttr('step');
             $('#cantidad'+id).attr('min',1);
-            $('#cantidad'+id).attr('data-prefix',unidad_secundaria); 
+            $('#cantidad'+id).attr('data-prefix',unidad_defecto); 
 			$('#cantidad'+id).attr('max',limite_pieza);
             $('#cantidad'+id).val(1);
             $('#cantidad'+id).inputSpinner({buttonsOnly: true, autoInterval: undefined});
-            $('#unidad'+id).val(unidad_secundaria); 
+            $('#unidad'+id).val(unidad_defecto); 
             //conversion = 0.180;
         }
     }
@@ -359,7 +366,7 @@ main::-webkit-scrollbar {
                     var uni = 'Mjo';
                     break;
                 case 'Pieza':
-                    var uni = 'Pza';
+                    var uni = 'Pz';
                     break;
                 //case 'Lt'
             }
@@ -393,21 +400,21 @@ main::-webkit-scrollbar {
 							//console.log(elemento.nombre + elemento.inventario + elemento.unidad_secundaria + categoria);
 								if(categoria == 96 || categoria == 104 && categoria_2 == 96){
 									article +='<div class="col-sm-12 col-12">'+
-										'<input name="cantidad" class="form-control-sm cantidad" value="500" type="number" min="500" step="500" data-prefix="Gr" max="'+inventario_gramos+'" id="cantidad'+elemento.id+'"/>'+
+										'<input name="cantidad" class="form-control-sm cantidad" value="500" type="number" min="500" step="500" data-suffix="Gr" max="'+inventario_gramos+'" id="cantidad'+elemento.id+'"/>'+
 									'</div>';
 								}else{
 									article +='<div class="col-sm-12 col-12">'+
-										'<input name="cantidad" class="form-control-sm cantidad" value="1" type="number" min="100" step="50" data-prefix="Gr" max="'+inventario_gramos+'" id="cantidad'+elemento.id+'"/>'+
+										'<input name="cantidad" class="form-control-sm cantidad" value="1" type="number" min="100" step="50" data-suffix="Gr" max="'+inventario_gramos+'" id="cantidad'+elemento.id+'"/>'+
 									'</div>';
 								}
                             }else if(elemento.inventario < 1 && elemento.unidad_secundaria == 'Pieza'){
                                 var limite_pieza = elemento.inventario/elemento.conversion;
                                 article +='<div class="col-sm-12 col-12">'+
-                                    '<input name="cantidad" class="form-control-sm cantidad" value="1" type="number" min="1" step="1" data-prefix="Pza" max="'+limite_pieza+'" id="cantidad'+elemento.id+'"/>'+
+                                    '<input name="cantidad" class="form-control-sm cantidad" value="1" type="number" min="1" step="1" data-suffix="Pza" max="'+limite_pieza+'" id="cantidad'+elemento.id+'"/>'+
                                 '</div>';
                             }else{
                                 article += '<div class="col-sm-12 col-12">'+
-                                    '<input name="cantidad" class="form-control-sm cantidad" value="1" type="number" min="1" data-prefix="'+uni+'" max="'+elemento.inventario+'" id="cantidad'+elemento.id+'"/>'+
+                                    '<input name="cantidad" class="form-control-sm cantidad" value="1" type="number" min="1" data-suffix="'+uni+'" max="'+elemento.inventario+'" id="cantidad'+elemento.id+'"/>'+
                                 '</div>';
                             }
                                 '<div class="col-sm-12 col-12">'+
