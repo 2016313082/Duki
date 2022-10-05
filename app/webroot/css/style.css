@@ -151,6 +151,13 @@ body{
        width:60%;
        margin:0px auto;
     }
+@media (min-width: 768px) {
+    .lineaVertical{
+        background-color: #00ffff;
+        height: 40px;
+        margin-top: 30px;
+    }
+}
 @media (max-width: 480px) {
 	.first-img{
         display: block;

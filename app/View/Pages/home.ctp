@@ -36,12 +36,12 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 </div>
 <!-- Slider Arae End -->
 <!-- Static Area Start -->
-<section class="static-area mtb-60px">
+<section class="static-area mtb-40px mt-res-md-60px mt-res-lg-30px">
     <div class="container">
-        <div class="static-area-wrap">
+        <div class="static-area-wrap" style="padding: 0px 30px">
             <div class="row">
                 <!-- Static Single Item Start -->
-                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-xs-4 col-md-4 col-sm-12">
                     <div class="single-static pb-res-md-0 pb-res-sm-0 pb-res-xs-0">
                         <?= $this->Html->image('icons/icono-envio.png',array('class'=>'img-responsive'))?>
                         <div class="single-static-meta">
@@ -51,9 +51,12 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
                     </div>
                 </div>
                 <!-- Static Single Item End -->
+                <div class="col-lg-1 col-sx-1 col-md-1">
+                    <hr align="left" class="lineaVertical" width="2px" noshade="noshade">
+                </div>
                 <!-- Static Single Item Start -->
-                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6">
-                    <div class="single-static pb-res-md-0 pb-res-sm-0 pb-res-xs-0 pt-res-xs-20">
+                <div class="col-lg-4 col-xs-4 col-md-4 col-sm-12">
+                    <div class="single-static pb-res-md-0 pb-res-sm-0">
                         <?= $this->Html->image('icons/icono-cobertura.png',array('class'=>'img-responsive'))?>
                         <div class="single-static-meta">
                             <h4>Entregas express</h4>
@@ -62,9 +65,12 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
                     </div>
                 </div>
                 <!-- Static Single Item End -->
+                <div class="col-lg-1 col-sx-1 col-md-1">
+                    <hr align="left" class="lineaVertical" width="2px" noshade="noshade">
+                </div>
                 <!-- Static Single Item Start -->
-                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6">
-                    <div class="single-static pt-res-md-30 pb-res-sm-30 pb-res-xs-0 pt-res-xs-20">
+                <div class="col-lg-3 col-xs-4 col-md-4 col-sm-12">
+                    <div class="single-static pb-res-md-0 pb-res-sm-0 pb-res-xs-0">
                         <?= $this->Html->image('icons/icono-pago.png',array('class'=>'img-responsive'))?>
                         <div class="single-static-meta">
                             <h4>Pagos 100% Seguros</h4>
@@ -72,19 +78,6 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
                         </div>
                     </div>
                 </div>
-                <!-- Static Single Item End -->
-                <!-- Static Single Item Start -->
-                <div class="col-lg-3 col-xs-12 col-md-6 col-sm-6">
-                    <div class="single-static pt-res-md-30 pb-res-sm-30 pt-res-xs-20">
-                        <?= $this->Html->image('icons/icono-atencion.png',array('class'=>'img-responsive'))?>
-                        <div class="single-static-meta">
-                            <h4>Atención Personalizada</h4>
-                            <p>Lunes a viernes de 8:00am a 8:00pm</p>
-                            <p>Sábados y domingos de 9:00am a 2:00pm</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Static Single Item End -->
             </div>
         </div>
     </div>
