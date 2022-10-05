@@ -242,19 +242,14 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 <div class="banner-area">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 col-xs-12">
-                <div class="banner-wrapper">
-                    <?= $this->Html->link($this->Html->image('banners/Emprendedores01.png'),array('controller'=>'categorias','action'=>'view',121),array('escape'=>false))?>
-                </div>
-            </div>
             <div class="col-md-6 col-xs-12 mt-res-sx-30px">
                 <div class="banner-wrapper">
                     <?= $this->Html->link($this->Html->image('banners/A2_Central.png'),array('controller'=>'categorias','action'=>'view',88),array('escape'=>false))?>
                 </div>
             </div>
-            <div class="col-md-3 col-xs-12 mt-res-sx-30px">
+            <div class="col-md-6 col-xs-12 mt-res-sx-30px">
                 <div class="banner-wrapper">
-                    <?= $this->Html->link($this->Html->image('banners/A3_Granel.png'),array('controller'=>'categorias','action'=>'view',93),array('escape'=>false))?>
+                    <?= $this->Html->link($this->Html->image('banners/A2_Central.png'),array('controller'=>'categorias','action'=>'view',88),array('escape'=>false))?>
                 </div>
             </div>
         </div>
@@ -263,27 +258,6 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 <!-- Banner Area End -->
 <!-- Best Sells Area Start -->
 <section class="best-sells-area mb-30px">
-    <div class="container">
-        <!-- Section Title Start -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h2>Productos Destacados</h2>
-                    <p>Lo que nuestros clientes prefieren.</p>
-                </div>
-            </div>
-        </div>
-        <!-- Section Title End -->
-        <!-- Best Sell Slider Carousel Start -->
-        <div class="best-sell-slider owl-carousel owl-nav-style">
-            <!-- Single Item -->
-            <?php foreach($destacados as $producto):?> 
-                <?= $this->Element('Productos/grid_view',array('producto'=>$producto['productos'],'tipo'=>'destacados','categoria_id'=>$destacados[0]['productos_categorias']['categoria_id']))?>
-            <?php endforeach?>
-            <!-- Single Item -->
-        </div>
-        <!-- Best Sells Carousel End -->
-    </div>
 </section>
 <!-- Best Sells Slider End -->
 <!-- Banner Area 2 Start -->
