@@ -1,15 +1,23 @@
-<?php $nuevo_id = $producto['id'].'_'.$tipo;?>
+<?php $nuevo_id = $producto['id'].'_'.$tipo;
+    $unidad_defecto = "defecto";
+    if($producto['unidad_principal'] == 'Pieza'){
+     $unidad_defecto = 'Pz';
+    } else {
+     $unidad_defecto = $producto['unidad_principal'];
+    }
+?>
 <article class="list-product">
     <div class="img-block">
         <?= $this->Html->image($producto['fotografia'],array('class'=>'first-img','alt'=>'DukiMX - '.$producto['nombre']))?>
     </div>
     <div class="product-decs">
-        <span  style = "color: red; "><?= $producto['etiqueta']?></span> 
         <h2 class="product-link">
             <?= $producto['nombre']?>
         </h2>
         <div class="pricing-meta">
             <ul>
+                <span  style = "color: red; "><?= $producto['etiqueta']?></span> 
+                <br>
                 <li class="current-price">$<?= number_format($producto['precio_venta']*(1+($producto['tasa_iva']/100)+($producto['tasa_ieps']/100)),2)."/".$producto['unidad_principal']?></li>
             </ul>
         </div>
@@ -23,11 +31,11 @@
                     ?>
 					<?php if($categoria_id == 96){?>
 						<div class="col-sm-12 col-12">
-                            <?= $this->Form->input('cantidad'.$producto['id'],array('type'=>'number','class'=>'form-control-sm','value'=>500,'min'=>500,'max'=>$inventario_gramos,'step'=>500,'label'=>false,'data-prefix'=>'Gr'))?>
+                            <?= $this->Form->input('cantidad'.$producto['id'],array('type'=>'number','class'=>'form-control-sm','value'=>500,'min'=>500,'max'=>$inventario_gramos,'step'=>500,'label'=>false,'data-suffix'=>'Gr'))?>
                         </div>
 					<?php }else{ ?>
 						<div class="col-sm-12 col-12">
-                            <?= $this->Form->input('cantidad'.$producto['id'],array('type'=>'number','class'=>'form-control-sm','value'=>100,'min'=>50,'max'=>$inventario_gramos,'step'=>50,'label'=>false,'data-prefix'=>'Gr'))?>
+                            <?= $this->Form->input('cantidad'.$producto['id'],array('type'=>'number','class'=>'form-control-sm','value'=>100,'min'=>50,'max'=>$inventario_gramos,'step'=>50,'label'=>false,'data-suffix'=>'Gr'))?>
                         </div>
 					<?php } ?>
             
@@ -35,25 +43,25 @@
                         $limite_pieza = $producto['inventario']/$producto['conversion'];
                     ?>
                         <div class="col-sm-12 col-12">
-                            <?= $this->Form->input('cantidad'.$producto['id'],array('type'=>'number','class'=>'form-control-sm','value'=>1,'min'=>1,'max'=>$limite_pieza,'label'=>false,'data-prefix'=>'Pza'))?>
+                            <?= $this->Form->input('cantidad'.$producto['id'],array('type'=>'number','class'=>'form-control-sm','value'=>1,'min'=>1,'max'=>$limite_pieza,'label'=>false,'data-suffix'=>'Pza'))?>
                         </div>
                     <?php }else{?>
                         <div class="col-sm-12 col-12">
-                            <?= $this->Form->input('cantidad'.$producto['id'],array('type'=>'number','class'=>'form-control-sm','value'=>1,'min'=>1,'max'=>$producto['inventario'],'label'=>false,'data-prefix'=>$producto['unidad_principal']))?>
+                            <?= $this->Form->input('cantidad'.$producto['id'],array('type'=>'number','class'=>'form-control-sm','value'=>1,'min'=>1,'max'=>$producto['inventario'],'label'=>false,'data-suffix'=>$unidad_defecto))?>
                         </div>
                     <?php }?>
                     <?php if($producto['unidad_secundaria']==""){?>
                         <input id="unidad<?= $producto['id']?>" value="<?= $producto['unidad_principal'] ?>" hidden>
                         <div class="col-sm-12 col-12">
-                            <button class="form-control" style="margin-top: 2%;" disabled><?= $producto['unidad_principal']?></button>
+                            <button class="form-control" style="margin-top: 2%; border:solid 1px; border-color: #4fb68d;" disabled><?= $producto['unidad_principal']?></button>
                         </div>
                     <?php }else if($producto['inventario'] >= 1){?>
                         <input id="unidad<?= $producto['id']?>" value="<?= $producto['unidad_principal'] ?>" hidden>
                         <div class="col-sm-6 col-6">
-                            <button class="form-control" style="margin-top: 2%;" id="unidad1<?= $producto['id']?>" onclick="unidad1('<?= $producto['unidad_principal']?>',<?= $producto['id']?>,<?= $producto['inventario']?>,<?= $categoria_id ?>);"><?= $producto['unidad_principal']?></button>
+                            <button class="form-control" style="margin-top: 2%;  border: solid 1px; border-color: #4fb68d; text-aling:center; background-color:none;" id="unidad1<?= $producto['id']?>" onclick="unidad1('<?= $producto['unidad_principal']?>',<?= $producto['id']?>,<?= $producto['inventario']?>,<?= $categoria_id ?>);"><?= $producto['unidad_principal']?></button>
                         </div>
                         <div class="col-sm-6 col-6">
-                            <button class="form-control" style="margin-top: 2%;" id="unidad2<?= $producto['id']?>" onclick="unidad2( <?= $categoria_id ?>,'<?= $producto['unidad_secundaria']?>',<?= $producto['id']?>,<?= $producto['inventario']?>,<?= $producto['conversion']?>);"><?= $producto['unidad_secundaria']?></button>
+                            <button class="form-control" style="margin-top: 2%;  border: solid 1px; border-color: #4fb68d; text-aling:center; background-color:none;" id="unidad2<?= $producto['id']?>" onclick="unidad2( <?= $categoria_id ?>,'<?= $producto['unidad_secundaria']?>',<?= $producto['id']?>,<?= $producto['inventario']?>,<?= $producto['conversion']?>);"><?= $producto['unidad_secundaria']?></button>
                         </div>
                     <?php }else{ ?>
                         <div class="col-sm-12 col-12">
@@ -61,7 +69,6 @@
                             <button class="form-control" disabled style="margin-top: 2%;" id="unidad2<?= $producto['id']?>"><?= $producto['unidad_secundaria']?></button>
                         </div>
                     <?php }?>
-                    
                 </div>
             </div>
         </div>
@@ -81,10 +88,10 @@
         </div>
         <div class="row" style="margin-top: 3%;">
             <div style="width:100%">
-                <div class="pro-details-cart btn-hover" >
+                <div class="btn-hover">
                     <?= $this->Form->hidden('id'.$producto['id'],array('value'=>$producto['id'])) ?>
                     <?php
-                        echo $this->Html->link('Comprar','javascript:addCarrito('.$producto['id'].')',array('class'=>'shop-btn animated','style'=>'text-align:center;width:100%')) 
+                        echo $this->Html->link('Comprar','javascript:addCarrito('.$producto['id'].')',array('class'=>'shop-btn animated','style'=>'text-align:center;width:100%;')) 
                     ?>
                 </div>
             </div>
