@@ -55,7 +55,8 @@
         echo $this->Html->script(
             array(
                 //'plugins/jquery.min',
-                'vendor/jquery-3.5.1.min',
+				'//code.jquery.com/jquery-3.4.0.min.js',
+               // 'vendor/jquery-3.5.1.min',
                 '/vendors/chosen/js/chosen.jquery',
                 'plugins/bootstrap.min',
                 'plugins/popper.min',
