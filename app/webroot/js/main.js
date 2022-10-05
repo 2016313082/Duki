@@ -179,7 +179,7 @@
             loop: false,
             nav :  true ,
             dots :  false ,
-            margin:30,
+            margin: 20,
             responsive:{
                 0:{
                     items:1,
@@ -187,24 +187,24 @@
                     loop: true,
                 },
                 360:{
-                    items:1,
+                    items:3,
                     autoplay: true,
                     loop: true,
                 },
                 576:{
-                    items:1,
+                    items:4,
                     autoplay: true,
                     loop: true,
     
                 },
                 767:{
-                    items:2,
+                    items:4,
                 },
                 992:{
-                    items:3,
+                    items:5,
                 },
                 1200:{
-                    items:3,
+                    items:7,
                 }
             }
     })

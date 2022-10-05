@@ -124,78 +124,59 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
         </div>
         <!-- Category Slider Start -->
         <div class="category-slider owl-carousel owl-nav-style">
-            <!-- Single item -->
             <div class="category-item">
                 <div class="category-list mb-30px">
                     <div class="category-thumb">
-                        <?= $this->Html->image('duki/frutas.png',array('controller'=>'categorias','action'=>'view',88),array('escape'=>false))?>
-                    </div>
-                    <div class="desc-listcategoreis">
-                        <div class="name_categories">
-                            <h4>Frutas</h4>
-                        </div>
-                        <?= $this->Html->link('Ver <i class="ion-android-arrow-dropright-circle"></i>',array('controller'=>'categorias','action'=>'view',88),array('escape'=>false))?>
+                        <?= $this->Html->link($this->Html->image('duki/categorias/Frutas_Verduras.png'),array('controller'=>'categorias','action'=>'view',88),array('escape'=>false))?>
                     </div>
                 </div>
+            </div>
+            <div class="category-item">
                 <div class="category-list mb-30px"> 
                     <div class="category-thumb">
-                        <?= $this->Html->image('duki/Marcas_Mexicanas.png',array('controller'=>'categorias','action'=>'view',91),array('escape'=>false))?>
-                    </div>
-                    <div class="desc-listcategoreis">
-                        <div class="name_categories">
-                            <h4>Marcas Mexicanas</h4>
-                        </div>
-                        <?= $this->Html->link('Ver <i class="ion-android-arrow-dropright-circle"></i>',array('controller'=>'categorias','action'=>'view',91),array('escape'=>false))?>
+                         <?= $this->Html->link($this->Html->image('duki/categorias/Carnes_Pescados.png'),array('controller'=>'categorias','action'=>'view',96),array('escape'=>false))?>
                     </div>
                 </div>
             </div>
-            <!-- Single item -->
             <div class="category-item">
                 <div class="category-list mb-30px">
                     <div class="category-thumb">
-                        <?= $this->Html->image('duki/granel.png',array('controller'=>'categorias','action'=>'view',93),array('escape'=>false))?>
-                    </div>
-                    <div class="desc-listcategoreis">
-                        <div class="name_categories">
-                            <h4>Granel</h4>
-                        </div>
-                        <?= $this->Html->link('Ver <i class="ion-android-arrow-dropright-circle"></i>',array('controller'=>'categorias','action'=>'view',93),array('escape'=>false))?>
-                    </div>
+                    <?= $this->Html->link($this->Html->image('duki/categorias/Lacteos_Huevo.png'),array('controller'=>'categorias','action'=>'view',95),array('escape'=>false))?>                        
+                    </div>                    
                 </div>
+            </div>
+            <div class="category-item">
                 <div class="category-list mb-30px">
                     <div class="category-thumb">
-                        <?= $this->Html->image('duki/carnes.png',array('controller'=>'categorias','action'=>'view',99),array('escape'=>false))?>
-                    </div>
-                    <div class="desc-listcategoreis">
-                        <div class="name_categories">
-                            <h4>Carnes</h4>
-                        </div>
-                        <?= $this->Html->link('Ver <i class="ion-android-arrow-dropright-circle"></i>',array('controller'=>'categorias','action'=>'view',96),array('escape'=>false))?>
+                        <?= $this->Html->link($this->Html->image('duki/categorias/Vinos_Licores.png'),array('controller'=>'categorias','action'=>'view',90),array('escape'=>false))?>
                     </div>
                 </div>
             </div>
-            <!-- Single item -->
             <div class="category-item">
                 <div class="category-list mb-30px">
                     <div class="category-thumb">
-                        <?= $this->Html->image('duki/despensa.png',array('controller'=>'categorias','action'=>'view',94),array('escape'=>false))?>
-                    </div>
-                    <div class="desc-listcategoreis">
-                        <div class="name_categories">
-                            <h4>Despensa</h4>
-                        </div>
-                        <?= $this->Html->link('Ver <i class="ion-android-arrow-dropright-circle"></i>',array('controller'=>'categorias','action'=>'view',94),array('escape'=>false))?>
+                    <?= $this->Html->link($this->Html->image('duki/categorias/Limpieza_Hogar.png'),array('controller'=>'categorias','action'=>'view',101),array('escape'=>false))?>
                     </div>
                 </div>
+            </div>
+            <div class="category-item">
                 <div class="category-list mb-30px">
                     <div class="category-thumb">
-                        <?= $this->Html->image('duki/verduras.png',array('controller'=>'categorias','action'=>'view',101),array('escape'=>false))?>
+                    <?= $this->Html->link($this->Html->image('duki/categorias/Higiene_Personal.png'),array('controller'=>'categorias','action'=>'view',99),array('escape'=>false))?>
                     </div>
-                    <div class="desc-listcategoreis">
-                        <div class="name_categories">
-                            <h4>Verduras</h4>
-                        </div>
-                        <?= $this->Html->link('Ver <i class="ion-android-arrow-dropright-circle"></i>',array('controller'=>'categorias','action'=>'view',89),array('escape'=>false))?>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="category-list mb-30px">
+                    <div class="category-thumb">
+                    <?= $this->Html->link($this->Html->image('duki/categorias/Promociones.png'),array('controller'=>'categorias','action'=>'view',103),array('escape'=>false))?>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="category-list mb-30px">
+                    <div class="category-thumb">
+                    <?= $this->Html->link($this->Html->image('duki/categorias/Consume_Local.png'),array('controller'=>'categorias','action'=>'view',91),array('escape'=>false))?>
                     </div>
                 </div>
             </div>
