@@ -282,7 +282,7 @@
             nav :  true ,
             loop: false,
             dots :  false ,
-            items:4,
+            items:5,
             margin:30,
             responsive:{
                 0:{
@@ -315,7 +315,7 @@
                     items:3,
                 },
                 1300:{
-                    items:4,
+                    items:5,
                 }
             }
     })

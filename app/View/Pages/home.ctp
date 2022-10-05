@@ -188,20 +188,18 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
 <section class="hot-deal-area">
     <div class="container">
         <div class="row">
-            
             <!-- New Arrivals Area Start -->
-            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-12">
+            <div class="col-xs-9 col-sm-12 col-md-12 col-lg-8 col-xl-9">
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- Section Title -->
+                        <!-- start Section Title -->
                         <div class="section-title ml-0px mt-res-sx-30px">
-                            <h2>Promociones</h2>
-                            <p>Promociones frescas de hoy</p>
+                            <h2>Promos favoritas de DUKI</h2>
+                            <p>Todas las ofertas</p>
                         </div>
-                        <!-- Section Title -->
+                        <!-- end Section Title -->
                     </div>
-                </div>
-                
+                </div>   
                 <!-- New Product Slider Start -->
                 <div class="new-product-slider owl-carousel owl-nav-style">
                     <?php $i=2?>
@@ -219,6 +217,23 @@ if(preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|c
                     <?php endforeach?>
                     <!-- Product Single Item -->
                 </div>
+            </div> <!--end row-->  
+    </div> <!--end container-->
+    <div class="col-xs-3 col-sm-8 col-md-6 col-lg-4 col-xl-3 card" style="margin-top:80px; align-items:center; background-color:#FDF5EA">
+        <form class="form-group center">
+            <div style="text-align:center; margin-top:50px; color: #3FBF90; ">
+            <h1><b> Te regalamos </b></h1><br>
+            <h1><b> $200 </b></h1><br>
+            </div>
+            <div style="text-align:center" class="form-group">
+            <h5>En tu primer pedido</h5><br>
+            <input class="form-control" type="text" name="" id="" placeholder="Usuario"><br>
+            <input class="form-control" type="text" name="" id="" placeholder="Correo"><br>
+            <input class="form-control" type="text" name="" id="" placeholder="Contraseña">
+            </div>
+        </form>
+        <div class="form-group center">
+            <button class="btn-warning" type="submit">Registrate</button>
         </div>
     </div>
 </section>
